@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DDA TEHNIK - Professional Air Conditioning Solutions</title>
+  <meta name="description" content="DDA TEHNIK menyediakan solusi pendingin udara profesional untuk hunian, bisnis, dan fasilitas komersial di Kendal, Batang, dan Semarang." />
+  <meta name="keywords" content="jasa AC Kendal, jasa AC Batang, jasa AC Semarang, pemasangan AC, servis AC, perawatan AC, DDA TEHNIK" />
+  <meta name="author" content="DDA TEHNIK" />
+
+  <!-- Open Graph Tags (untuk preview saat dibagikan) -->
+  <meta property="og:title" content="DDA TEHNIK - Professional Air Conditioning Solutions" />
+  <meta property="og:description" content="Solusi pendingin udara profesional untuk hunian, bisnis, dan fasilitas komersial Anda." />
+  <meta property="og:type" content="website" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- jQuery via CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- Animate.css via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Google Fonts: Inter (body) + Poppins (heading) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Tailwind Configuration: daftarkan warna brand DDA TEHNIK -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#082B4C',          // Warna utama brand
+            'electric-blue': '#0878C9', // Aksen biru elektrik
+            gold: '#D5A43A',          // Aksen emas
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="font-sans bg-white text-navy antialiased">
+
+  <!-- =================== NAVBAR =================== -->
+  <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="#home" class="flex items-center gap-2 group">
+          <span class="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-navy text-gold font-heading font-extrabold text-lg shadow-md group-hover:bg-electric-blue transition-colors duration-300">
+            DDA
+          </span>
+          <span class="font-heading font-extrabold text-xl tracking-wide text-white">
+            DDA <span class="text-gold">TEHNIK</span>
+          </span>
+        </a>
+
+        <!-- Menu desktop -->
+        <nav class="hidden lg:flex items-center gap-1">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#tentang" class="nav-link">Tentang Kami</a>
+          <a href="#layanan" class="nav-link">Layanan</a>
+          <a href="#produk" class="nav-link">Produk / Jenis AC</a>
+          <a href="#galeri" class="nav-link">Galeri Proyek</a>
+          <a href="#area" class="nav-link">Area Layanan</a>
+          <a href="#kontak" class="nav-link">Kontak</a>
+        </nav>
+
+        <!-- Tombol WhatsApp di navbar (desktop) -->
+        <a href="https://wa.me/6281949350104?text=Halo%20DDA%20TEHNIK%2C%20saya%20ingin%20konsultasi%20layanan%20AC."
+           target="_blank" rel="noopener noreferrer"
+           class="hidden lg:inline-flex items-center gap-2 bg-gold hover:bg-gold-dark text-navy font-semibold px-5 py-2.5 rounded-full transition-colors duration-300 shadow-md">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.343-11.891 11.9-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.742 5.634l-.999 3.648 3.746-.981zm5.436-7.965c-.07-.116-.257-.185-.538-.328-.282-.143-1.664-.822-1.922-.915-.257-.093-.444-.14-.632.14-.187.279-.726.915-.891 1.103-.164.186-.329.209-.611.07-.282-.14-1.191-.439-2.268-1.4-.839-.749-1.405-1.674-1.57-1.955-.164-.279-.018-.43.124-.571.127-.127.282-.329.423-.494.143-.164.187-.28.281-.468.094-.187.047-.349-.023-.492-.07-.143-.631-1.523-.864-2.083-.227-.546-.459-.472-.631-.481l-.538-.009c-.187 0-.492.07-.749.349-.257.279-.982.959-.982 2.339 0 1.379 1.005 2.713 1.146 2.9.14.187 1.974 3.013 4.779 4.221.668.288 1.189.46 1.596.589.671.213 1.283.183 1.767.111.539-.08 1.664-.681 1.898-1.34.234-.659.234-1.223.164-1.34z"/>
+          </svg>
+          Konsultasi
+        </a>
+
+        <!-- Tombol menu mobile -->
+        <button id="menuToggle" aria-label="Buka menu navigasi" aria-expanded="false"
+                class="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded-lg text-white hover:bg-white/10 transition-colors">
+          <svg id="iconMenu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="iconClose" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6 hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu mobile (slide down) -->
+    <div id="mobileMenu" class="lg:hidden hidden bg-navy/98 backdrop-blur-md border-t border-white/10">
+      <nav class="container mx-auto px-4 sm:px-6 py-4 flex flex-col gap-1">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#tentang" class="mobile-link">Tentang Kami</a>
+        <a href="#layanan" class="mobile-link">Layanan</a>
+        <a href="#produk" class="mobile-link">Produk / Jenis AC</a>
+        <a href="#galeri" class="mobile-link">Galeri Proyek</a>
+        <a href="#area" class="mobile-link">Area Layanan</a>
+        <a href="#kontak" class="mobile-link">Kontak</a>
+        <a href="https://wa.me/6281949350104?text=Halo%20DDA%20TEHNIK%2C%20saya%20ingin%20konsultasi%20layanan%20AC."
+           target="_blank" rel="noopener noreferrer"
+           class="mt-2 inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-dark text-navy font-semibold px-5 py-3 rounded-full transition-colors duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.343-11.891 11.9-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.742 5.634l-.999 3.648 3.746-.981zm5.436-7.965c-.07-.116-.257-.185-.538-.328-.282-.143-1.664-.822-1.922-.915-.257-.093-.444-.14-.632.14-.187.279-.726.915-.891 1.103-.164.186-.329.209-.611.07-.282-.14-1.191-.439-2.268-1.4-.839-.749-1.405-1.674-1.57-1.955-.164-.279-.018-.43.124-.571.127-.127.282-.329.423-.494.143-.164.187-.28.281-.468.094-.187.047-.349-.023-.492-.07-.143-.631-1.523-.864-2.083-.227-.546-.459-.472-.631-.481l-.538-.009c-.187 0-.492.07-.749.349-.257.279-.982.959-.982 2.339 0 1.379 1.005 2.713 1.146 2.9.14.187 1.974 3.013 4.779 4.221.668.288 1.189.46 1.596.589.671.213 1.283.183 1.767.111.539-.08 1.664-.681 1.898-1.34.234-.659.234-1.223.164-1.34z"/>
+          </svg>
+          Konsultasi via WhatsApp
+        </a>
+      </nav>
+    </div>
+  </header>
+
+    <!-- =================== HERO SECTION =================== -->
+  <section id="home" class="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden hero-bg">
+    <!-- Decorative pattern -->
+    <div class="absolute inset-0 hero-pattern opacity-10"></div>
+    <!-- Glow effect -->
+    <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-electric-blue/20 blur-3xl"></div>
+    <div class="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-gold/20 blur-3xl"></div>
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Teks hero -->
+        <div class="text-center lg:text-left animate__animated animate__fadeInUp">
+          <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-gold text-sm font-medium mb-6">
+            <span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span>
+            Melayani Kendal · Batang · Semarang
+          </span>
+          <h1 class="font-heading font-extrabold text-white text-4xl sm:text-5xl lg:text-6xl leading-tight mb-6">
+            Professional <br class="hidden sm:block" />
+            Air Conditioning <br class="hidden sm:block" />
+            <span class="text-gold">Solutions</span>
+          </h1>
+          <p class="text-lg text-white/80 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            Solusi pendingin udara profesional untuk hunian, bisnis, dan fasilitas komersial Anda.
+            Pemasangan, perawatan, dan perbaikan AC oleh tim yang berpengalaman.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <!-- Tombol: Konsultasi via WhatsApp -->
+            <a href="https://wa.me/6281949350104?text=Halo%20DDA%20TEHNIK%2C%20saya%20ingin%20konsultasi%20layanan%20AC."
+               target="_blank" rel="noopener noreferrer"
+               class="btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.343-11.891 11.9-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.742 5.634l-.999 3.648 3.746-.981zm5.436-7.965c-.07-.116-.257-.185-.538-.328-.282-.143-1.664-.822-1.922-.915-.257-.093-.444-.14-.632.14-.187.279-.726.915-.891 1.103-.164.186-.329.209-.611.07-.282-.14-1.191-.439-2.268-1.4-.839-.749-1.405-1.674-1.57-1.955-.164-.279-.018-.43.124-.571.127-.127.282-.329.423-.494.143-.164.187-.28.281-.468.094-.187.047-.349-.023-.492-.07-.143-.631-1.523-.864-2.083-.227-.546-.459-.472-.631-.481l-.538-.009c-.187 0-.492.07-.749.349-.257.279-.982.959-.982 2.339 0 1.379 1.005 2.713 1.146 2.9.14.187 1.974 3.013 4.779 4.221.668.288 1.189.46 1.596.589.671.213 1.283.183 1.767.111.539-.08 1.664-.681 1.898-1.34.234-.659.234-1.223.164-1.34z"/>
+              </svg>
+              Konsultasi via WhatsApp
+            </a>
+            <!-- Tombol: Minta Survey / Penawaran -->
+            <a href="#kontak" class="btn-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+              </svg>
+              Minta Survey / Penawaran
+            </a>
+          </div>
+
+          <!-- Mini stats -->
+          <div class="grid grid-cols-3 gap-4 mt-12 max-w-md mx-auto lg:mx-0">
+            <div class="text-center lg:text-left">
+              <p class="text-3xl font-heading font-extrabold text-gold">3</p>
+              <p class="text-sm text-white/70">Kota Layanan</p>
+            </div>
+            <div class="text-center lg:text-left">
+              <p class="text-3xl font-heading font-extrabold text-gold">4</p>
+              <p class="text-sm text-white/70">Jenis Layanan</p>
+            </div>
+            <div class="text-center lg:text-left">
+              <p class="text-3xl font-heading font-extrabold text-gold">3</p>
+              <p class="text-sm text-white/70">Jenis AC</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gambar hero -->
+        <div class="relative animate__animated animate__fadeInRight">
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wall_mount_air_conditioner.jpg?width=900"
+                 alt="Unit AC dinding terpasang rapi pada ruangan modern - gambar ilustrasi dari Wikimedia Commons"
+                 class="w-full h-[420px] sm:h-[480px] object-cover"
+                 loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent"></div>
+          </div>
+
+          <!-- Floating card: kontak cepat -->
+          <div class="absolute -bottom-6 -left-6 sm:-left-10 bg-white rounded-xl shadow-xl p-4 sm:p-5 max-w-[260px] border-l-4 border-gold animate__animated animate__fadeInUp animate__delay-1s">
+            <p class="text-xs text-navy/60 mb-1">Butuh bantuan cepat?</p>
+            <p class="font-heading font-bold text-navy mb-2">Chat WhatsApp</p>
+            <a href="https://wa.me/6281949350104?text=Halo%20DDA%20TEHNIK%2C%20saya%20ingin%20konsultasi%20layanan%20AC."
+               target="_blank" rel="noopener noreferrer"
+               class="text-sm text-electric-blue hover:text-navy font-semibold transition-colors">
+               0819-4935-0104 →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wave separator di bawah hero -->
+    <div class="absolute bottom-0 left-0 right-0">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none" class="w-full h-12 sm:h-16">
+        <path d="M0,40 C360,100 1080,0 1440,60 L1440,100 L0,100 Z" fill="#ffffff"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- =================== TENTANG KAMI =================== -->
+  <section id="tentang" class="py-20 lg:py-28 bg-white section-reveal">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <!-- Gambar -->
+        <div class="relative order-2 lg:order-1">
+          <div class="rounded-2xl overflow-hidden shadow-xl">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/HVAC.jpg?width=800"
+                 alt="Ilustrasi komponen sistem HVAC / pendingin udara - dari Wikimedia Commons (NIST)"
+                 class="w-full h-[400px] object-cover"
+                 loading="lazy" />
+          </div>
+          <!-- Accent shape -->
+          <div class="absolute -top-4 -right-4 w-24 h-24 rounded-2xl bg-gold/20 -z-10"></div>
+          <div class="absolute -bottom-4 -left-4 w-32 h-32 rounded-full bg-electric-blue/10 -z-10"></div>
+        </div>
+
+        <!-- Teks -->
+        <div class="order-1 lg:order-2">
+          <span class="text-electric-blue font-semibold uppercase tracking-widest text-sm">Tentang Kami</span>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-navy mt-3 mb-6 leading-tight">
+            Mitra Pendingin Udara untuk <span class="text-electric-blue">Hunian & Bisnis</span> Anda
+          </h2>
+          <p class="text-navy/70 leading-relaxed mb-5">
+            <strong>DDA TEHNIK</strong> adalah penyedia layanan pendingin udara (AC) yang melayani
+            area Kendal, Batang, dan Semarang. Kami berfokus pada pemasangan AC baru, servis dan
+            perbaikan unit AC, perawatan berkala, serta penanganan sistem pendingin untuk gedung
+            dan area komersial.
+          </p>
+          <p class="text-navy/70 leading-relaxed mb-8">
+            Setiap pekerjaan dikerjakan dengan pendekatan yang rapi dan sistematis — mulai dari
+            pengecekan kondisi ruangan, pemilihan jenis AC yang sesuai, hingga pemasangan dan
+            pengujian akhir. Kami berkomitmen memberikan solusi pendingin yang sesuai kebutuhan,
+            tanpa merekomendasikan hal-hal yang tidak diperlukan oleh pelanggan.
+          </p>
+
+          <!-- Highlight points -->
+          <ul class="grid sm:grid-cols-2 gap-4">
+            <li class="flex items-start gap-3">
+              <span class="flex-shrink-0 w-6 h-6 rounded-full bg-electric-blue/10 text-electric-blue flex items-center justify-center mt-0.5">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="w-3.5 h-3.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <span class="text-navy/80 text-sm leading-relaxed">Survey lokasi sebelum pemasangan</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="flex-shrink-0 w-6 h-6 rounded-full bg-electric-blue/10 text-electric-blue flex items-center justify-center mt-0.5">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="w-3.5 h-3.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <span class="text-navy/80 text-sm leading-relaxed">Penyesuaian terhadap kebutuhan ruangan</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="flex-shrink-0 w-6 h-6 rounded-full bg-electric-blue/10 text-electric-blue flex items-center justify-center mt-0.5">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="w-3.5 h-3.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <span class="text-navy/80 text-sm leading-relaxed">Pengerjaan rapi dan terjadwal</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="flex-shrink-0 w-6 h-6 rounded-full bg-electric-blue/10 text-electric-blue flex items-center justify-center mt-0.5">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="w-3.5 h-3.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <span class="text-navy/80 text-sm leading-relaxed">Layanan untuk rumah & komersial</span>
+            </li>
+          </ul>
+
+          <a href="#layanan" class="inline-flex items-center gap-2 mt-8 text-electric-blue hover:text-navy font-semibold transition-colors">
+            Lihat Layanan Kami
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- =================== LAYANAN =================== -->
+  <section id="layanan" class="py-20 lg:py-28 bg-gray-50 section-reveal">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Heading -->
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-electric-blue font-semibold uppercase tracking-widest text-sm">Layanan Kami</span>
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-navy mt-3 mb-4 leading-tight">
+          Solusi AC yang Menyeluruh
+        </h2>
+        <p class="text-navy/70 leading-relaxed">
+          Dari pemasangan unit baru hingga perawatan rutin, kami siap membantu kebutuhan pendingin
+          udara Anda di area Kendal, Batang, dan Semarang.
+        </p>
+      </div>
+
+      <!-- Grid layanan (4 kartu) -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card 1: Pemasangan AC Baru -->
+        <article class="service-card group">
+          <div class="w-14 h-14 rounded-2xl bg-electric-blue/10 text-electric-blue flex items-center justify-center mb-5 group-hover:bg-electric-blue group-hover:text-white transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-7 h-7">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V9m6 6v2m0-6V9m0 4a2 2 0 100-4m0 4a2 2 0 110-4" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-navy mb-3">Pemasangan AC Baru</h3>
+          <p class="text-navy/70 text-sm leading-relaxed mb-4">
+            Instalasi unit AC split, cassette, atau outdoor dengan perhitungan kapasitas yang sesuai
+            ukuran ruangan. Termasuk pemasangan pipa, kabel, dan bracket yang rapi.
+          </p>
+          <a href="#kontak" class="text-electric-blue hover:text-navy text-sm font-semibold inline-flex items-center gap-1 transition-colors">
+            Minta Penawaran
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </article>
+
+        <!-- Card 2: Servis & Perbaikan AC -->
+        <article class="service-card group">
+          <div class="w-14 h-14 rounded-2xl bg-electric-blue/10 text-electric-blue flex items-center justify-center mb-5 group-hover:bg-electric-blue group-hover:text-white transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-7 h-7">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l3.05-3.05m-3.05 3.05l-1.93-1.93m5.0 5.0L9.5 21H5v-4.5l8.0-8.0m-1.58 6.67a10 10 0 11-3.59-3.59" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-navy mb-3">Servis &amp; Perbaikan AC</h3>
+          <p class="text-navy/70 text-sm leading-relaxed mb-4">
+            Penanganan AC tidak dingin, bocor, suara berisik, atau bermasalah. Pengecekan kompresor,
+            freon, dan komponen lain untuk mengembalikan performa unit pendingin Anda.
+          </p>
+          <a href="#kontak" class="text-electric-blue hover:text-navy text-sm font-semibold inline-flex items-center gap-1 transition-colors">
+            Minta Penawaran
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </article>
+
+        <!-- Card 3: Perawatan Berkala -->
+        <article class="service-card group">
+          <div class="w-14 h-14 rounded-2xl bg-electric-blue/10 text-electric-blue flex items-center justify-center mb-5 group-hover:bg-electric-blue group-hover:text-white transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-7 h-7">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-navy mb-3">Perawatan Berkala</h3>
+          <p class="text-navy/70 text-sm leading-relaxed mb-4">
+            Cuci AC, pembersihan filter & evaporator, pengecekan tekanan freon, serta pengecekan
+            kelistrikan agar AC tetap awet dan hemat listrik dalam jangka panjang.
+          </p>
+          <a href="#kontak" class="text-electric-blue hover:text-navy text-sm font-semibold inline-flex items-center gap-1 transition-colors">
+            Minta Penawaran
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </article>
+
+        <!-- Card 4: Sistem AC Gedung & Komersial -->
+        <article class="service-card group">
+          <div class="w-14 h-14 rounded-2xl bg-electric-blue/10 text-electric-blue flex items-center justify-center mb-5 group-hover:bg-electric-blue group-hover:text-white transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-7 h-7">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0H5m14 0h2m-2 0h-2m-2 0V7a2 2 0 00-2-2H9a2 2 0 00-2 2v10m12 0H7m4 0V9a1 1 0 011-1h0a1 1 0 011 1v6m-2 0h2" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-navy mb-3">AC Gedung &amp; Komersial</h3>
+          <p class="text-navy/70 text-sm leading-relaxed mb-4">
+            Penanganan kebutuhan pendingin untuk kantor, ruko, restoran, dan ruang komersial lainnya.
+            Mulai dari pemilihan unit hingga perawatan berkala untuk operasional yang stabil.
+          </p>
+          <a href="#kontak" class="text-electric-blue hover:text-navy text-sm font-semibold inline-flex items-center gap-1 transition-colors">
+            Minta Penawaran
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== PRODUK / JENIS AC =================== -->
+  <section id="produk" class="py-20 lg:py-28 bg-navy text-white section-reveal relative overflow-hidden">
+    <!-- Decorative -->
+    <div class="absolute top-0 right-0 w-80 h-80 rounded-full bg-electric-blue/10 blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-80 h-80 rounded-full bg-gold/10 blur-3xl"></div>
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-gold font-semibold uppercase tracking-widest text-sm">Produk / Jenis AC</span>
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl mt-3 mb-4 leading-tight">
+          Jenis AC yang Kami Tangani
+        </h2>
+        <p class="text-white/70 leading-relaxed">
+          Setiap jenis AC punya karakteristik dan kebutuhan ruangan yang berbeda.
+          Kami membantu memilih dan memasang jenis yang paling sesuai untuk Anda.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+        <!-- Card: Split AC -->
+        <article class="ac-card group">
+          <div class="overflow-hidden rounded-t-2xl">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Single-room_AC_unit-internal.jpg?width=600"
+                 alt="Ilustrasi unit AC split dinding (indoor unit) - dari Wikimedia Commons"
+                 class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+                 loading="lazy" />
+          </div>
+          <div class="p-6">
+            <span class="inline-block px-3 py-1 rounded-full bg-electric-blue/10 text-electric-blue text-xs font-semibold mb-3">Rumah Tangga</span>
+            <h3 class="font-heading font-bold text-xl text-navy mb-2">Split AC</h3>
+            <p class="text-navy/70 text-sm leading-relaxed mb-4">
+              AC dinding yang paling umum untuk rumah dan ruangan pribadi. Terdiri dari indoor unit
+              dan outdoor unit yang dipasang terpisah. Cocok untuk kamar tidur, ruang keluarga,
+              hingga ruang kantor kecil.
+            </p>
+            <ul class="text-xs text-navy/60 space-y-1.5">
+              <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-gold"></span> Hemat listrik</li>
+              <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-gold"></span> Suara relatif senyap</li>
+              <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-gold"></span> Mudah dirawat</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Card: Cassette AC -->
+        <article class="ac-card group">
+          <div class="overflow-hidden rounded-t-2xl">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ceiling_air_conditioner.JPG?width=600"
+                 alt="Ilustrasi AC cassette yang dipasang di langit-langit - dari Wikimedia Commons"
+                 class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+                 loading="lazy" />
+          </div>
+          <div class="p-6">
+            <span class="inline-block px-3 py-1 rounded-full bg-electric-blue/10 text-electric-blue text-xs font-semibold mb-3">Komersial</span>
+            <h3 class="font-heading font-bold text-xl text-navy mb-2">Cassette AC</h3>
+            <p class="text-navy/70 text-sm leading-relaxed mb-4">
+              AC yang dipasang menempel pada plafon (langit-langit), meniupkan udara ke empat arah
+              secara merata. Cocok untuk ruangan besar seperti toko, restoran, ruang meeting,
+              atau area komersial lainnya.
+            </p>
+            <ul class="text-xs text-navy/60 space-y-1.5">
+              <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-gold"></span> Distribusi udara 4 arah</li>
+              <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-gold"></span> Hemat ruang dinding</li>
+              <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-gold"></span> Tampilan rapi</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Card: Outdoor Unit -->
+        <article class="ac-card group">
+          <div class="overflow-hidden rounded-t-2xl">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Condenser_unit_for_central_air_conditioning.JPG?width=600"
+                 alt="Ilustrasi outdoor unit AC (kondenser) terpasang - dari Wikimedia Commons"
+                 class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+                 loading="lazy" />
+          </div>
+          <div class="p-6">
+            <span class="inline-block px-3 py-1 rounded-full bg-electric-blue/10 text-electric-blue text-xs font-semibold mb-3">Komponen</span>
+            <h3 class="font-heading font-bold text-xl text-navy mb-2">Outdoor Unit</h3>
+            <p class="text-navy/70 text-sm leading-relaxed mb-4">
+              Unit luar (kondenser) yang melepaskan panas dari ruangan ke udara luar. Pemasangan
+              yang benar — bracket kokoh, sirkulasi udara lancar, posisi aman — penting agar
+              performa AC tetap optimal dan awet.
+            </p>
+            <ul class="text-xs text-navy/60 space-y-1.5">
+              <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-gold"></span> Pemasangan bracket aman</li>
+              <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-gold"></span> Sirkulasi udara lancar</li>
+              <li class="flex items-center gap-2"><span class="w-1 h-1 rounded-full bg-gold"></span> Perawatan berkala</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="#kontak" class="btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.343-11.891 11.9-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.742 5.634l-.999 3.648 3.746-.981zm5.436-7.965c-.07-.116-.257-.185-.538-.328-.282-.143-1.664-.822-1.922-.915-.257-.093-.444-.14-.632.14-.187.279-.726.915-.891 1.103-.164.186-.329.209-.611.07-.282-.14-1.191-.439-2.268-1.4-.839-.749-1.405-1.674-1.57-1.955-.164-.279-.018-.43.124-.571.127-.127.282-.329.423-.494.143-.164.187-.28.281-.468.094-.187.047-.349-.023-.492-.07-.143-.631-1.523-.864-2.083-.227-.546-.459-.472-.631-.481l-.538-.009c-.187 0-.492.07-.749.349-.257.279-.982.959-.982 2.339 0 1.379 1.005 2.713 1.146 2.9.14.187 1.974 3.013 4.779 4.221.668.288 1.189.46 1.596.589.671.213 1.283.183 1.767.111.539-.08 1.664-.681 1.898-1.34.234-.659.234-1.223.164-1.34z"/>
+          </svg>
+          Konsultasi Jenis AC yang Cocok
+        </a>
+      </div>
+    </div>
+  </section>
+
+    <!-- =================== GALERI PROYEK =================== -->
+  <section id="galeri" class="py-20 lg:py-28 bg-white section-reveal">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-electric-blue font-semibold uppercase tracking-widest text-sm">Galeri</span>
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-navy mt-3 mb-4 leading-tight">
+          Galeri Ilustrasi AC
+        </h2>
+        <p class="text-navy/70 leading-relaxed">
+          Beberapa contoh ilustrasi pemasangan dan kondisi AC yang relevan dengan pekerjaan kami.
+        </p>
+        <p class="text-xs text-navy/50 mt-3 italic">
+          Catatan: gambar di bawah adalah ilustrasi umum dari Wikimedia Commons, bukan foto proyek aktual DDA TEHNIK.
+        </p>
+      </div>
+
+      <!-- Grid galeri -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Item 1 -->
+        <figure class="gallery-item group">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Air_conditioners_on_apartment_walls.jpg?width=600"
+               alt="Ilustrasi beberapa unit AC terpasang di dinding apartemen - Wikimedia Commons"
+               class="w-full h-64 object-cover"
+               loading="lazy" />
+          <figcaption class="gallery-caption">
+            <span class="text-xs text-gold uppercase tracking-wider">Pemasangan</span>
+            <p class="text-sm font-semibold mt-1">Pemasangan AC Dinding Beruntun</p>
+          </figcaption>
+        </figure>
+
+        <!-- Item 2 -->
+        <figure class="gallery-item group">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Air_conditioner_3.jpg?width=600"
+               alt="Ilustrasi unit AC dinding terpasang - Wikimedia Commons"
+               class="w-full h-64 object-cover"
+               loading="lazy" />
+          <figcaption class="gallery-caption">
+            <span class="text-xs text-gold uppercase tracking-wider">Indoor Unit</span>
+            <p class="text-sm font-semibold mt-1">AC Dinding untuk Ruangan</p>
+          </figcaption>
+        </figure>
+
+        <!-- Item 3 -->
+        <figure class="gallery-item group">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ceiling_air_conditioner.JPG?width=600"
+               alt="Ilustrasi AC cassette di langit-langit ruangan - Wikimedia Commons"
+               class="w-full h-64 object-cover"
+               loading="lazy" />
+          <figcaption class="gallery-caption">
+            <span class="text-xs text-gold uppercase tracking-wider">Cassette</span>
+            <p class="text-sm font-semibold mt-1">AC Cassette untuk Komersial</p>
+          </figcaption>
+        </figure>
+
+        <!-- Item 4 -->
+        <figure class="gallery-item group">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Condenser_unit_for_central_air_conditioning.JPG?width=600"
+               alt="Ilustrasi outdoor unit AC (kondenser) - Wikimedia Commons"
+               class="w-full h-64 object-cover"
+               loading="lazy" />
+          <figcaption class="gallery-caption">
+            <span class="text-xs text-gold uppercase tracking-wider">Outdoor Unit</span>
+            <p class="text-sm font-semibold mt-1">Pemasangan Kondenser Luar</p>
+          </figcaption>
+        </figure>
+
+        <!-- Item 5 -->
+        <figure class="gallery-item group">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wall_mount_air_conditioner.jpg?width=600"
+               alt="Ilustrasi AC dinding terpasang rapi - Wikimedia Commons"
+               class="w-full h-64 object-cover"
+               loading="lazy" />
+          <figcaption class="gallery-caption">
+            <span class="text-xs text-gold uppercase tracking-wider">Split AC</span>
+            <p class="text-sm font-semibold mt-1">AC Split Dinding</p>
+          </figcaption>
+        </figure>
+
+        <!-- Item 6 -->
+        <figure class="gallery-item group">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/HVAC.jpg?width=600"
+               alt="Ilustrasi komponen sistem HVAC / pendingin udara - Wikimedia Commons"
+               class="w-full h-64 object-cover"
+               loading="lazy" />
+          <figcaption class="gallery-caption">
+            <span class="text-xs text-gold uppercase tracking-wider">Sistem</span>
+            <p class="text-sm font-semibold mt-1">Komponen Sistem Pendingin</p>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="#kontak" class="btn-outline">
+          Diskusikan Kebutuhan AC Anda
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== AREA LAYANAN =================== -->
+  <section id="area" class="py-20 lg:py-28 bg-gray-50 section-reveal">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-electric-blue font-semibold uppercase tracking-widest text-sm">Area Layanan</span>
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-navy mt-3 mb-4 leading-tight">
+          Melayani Wilayah Anda
+        </h2>
+        <p class="text-navy/70 leading-relaxed">
+          Saat ini DDA TEHNIK melayani kebutuhan AC di tiga wilayah utama Jawa Tengah berikut.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Kendal -->
+        <div class="area-card group">
+          <div class="w-12 h-12 rounded-xl bg-electric-blue text-white flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-xl text-navy mb-2">Kendal</h3>
+          <p class="text-navy/70 text-sm leading-relaxed mb-3">
+            Melayani kebutuhan pemasangan, servis, dan perawatan AC untuk wilayah Kabupaten Kendal
+            dan sekitarnya.
+          </p>
+          <a href="#kontak"
+             class="text-electric-blue hover:text-navy text-sm font-semibold inline-flex items-center gap-1 transition-colors">
+            Minta Survey
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Batang -->
+        <div class="area-card group">
+          <div class="w-12 h-12 rounded-xl bg-electric-blue text-white flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-xl text-navy mb-2">Batang</h3>
+          <p class="text-navy/70 text-sm leading-relaxed mb-3">
+            Melayani kebutuhan pemasangan, servis, dan perawatan AC untuk wilayah Kabupaten Batang
+            dan sekitarnya.
+          </p>
+          <a href="#kontak"
+             class="text-electric-blue hover:text-navy text-sm font-semibold inline-flex items-center gap-1 transition-colors">
+            Minta Survey
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Semarang -->
+        <div class="area-card group">
+          <div class="w-12 h-12 rounded-xl bg-electric-blue text-white flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-xl text-navy mb-2">Semarang</h3>
+          <p class="text-navy/70 text-sm leading-relaxed mb-3">
+            Melayani kebutuhan pemasangan, servis, dan perawatan AC untuk wilayah Kota dan Kabupaten
+            Semarang.
+          </p>
+          <a href="#kontak"
+             class="text-electric-blue hover:text-navy text-sm font-semibold inline-flex items-center gap-1 transition-colors">
+            Minta Survey
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Banner area -->
+      <div class="mt-10 rounded-2xl bg-navy text-white p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="text-center sm:text-left">
+          <h3 class="font-heading font-bold text-lg mb-1">Lokasi Anda belum tercantum?</h3>
+          <p class="text-white/70 text-sm">Hubungi kami untuk menanyakan apakah lokasi Anda dapat kami jangkau.</p>
+        </div>
+        <a href="https://wa.me/6281949350104?text=Halo%20DDA%20TEHNIK%2C%20saya%20ingin%20konsultasi%20layanan%20AC."
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 bg-gold hover:bg-gold-dark text-navy font-semibold px-6 py-3 rounded-full transition-colors duration-300 whitespace-nowrap">
+          Tanyakan via WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== ALASAN MEMILIH KAMI =================== -->
+  <section id="alasan" class="py-20 lg:py-28 bg-white section-reveal">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-electric-blue font-semibold uppercase tracking-widest text-sm">Alasan Memilih Kami</span>
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-navy mt-3 mb-4 leading-tight">
+          Kenapa DDA TEHNIK?
+        </h2>
+        <p class="text-navy/70 leading-relaxed">
+          Kami fokus pada pengerjaan yang rapi, transparan, dan sesuai kebutuhan — tanpa
+          merekomendasikan layanan yang tidak perlu.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <!-- Reason 1 -->
+        <div class="reason-card">
+          <div class="reason-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-7 h-7">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.948 11.948 0 0012 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12c0-1.087-.158-2.137-.443-3.13z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-navy mb-2">Pengerjaan Rapi &amp; Terjadwal</h3>
+          <p class="text-navy/70 text-sm leading-relaxed">
+            Pekerjaan dilakukan dengan rapi dan sesuai jadwal yang disepakati. Lokasi kerja ditinggalkan
+            dalam kondisi bersih setelah pemasangan selesai.
+          </p>
+        </div>
+
+        <!-- Reason 2 -->
+        <div class="reason-card">
+          <div class="reason-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-7 h-7">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-navy mb-2">Penawaran Transparan</h3>
+          <p class="text-navy/70 text-sm leading-relaxed">
+            Setiap penawaran disusun setelah survey kondisi lapangan. Biaya dan ruang lingkup pekerjaan
+            disampaikan di awal, tanpa biaya tersembunyi.
+          </p>
+        </div>
+
+        <!-- Reason 3 -->
+        <div class="reason-card">
+          <div class="reason-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-7 h-7">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-navy mb-2">Respon Cepat</h3>
+          <p class="text-navy/70 text-sm leading-relaxed">
+            Pertanyaan dan permintaan survey kami balas secepat mungkin melalui WhatsApp, sehingga
+            kebutuhan AC Anda dapat segera ditindaklanjuti.
+          </p>
+        </div>
+
+        <!-- Reason 4 -->
+        <div class="reason-card">
+          <div class="reason-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-7 h-7">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 12h18M3 6h18M3 18h18" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-navy mb-2">Sesuai Kebutuhan</h3>
+          <p class="text-navy/70 text-sm leading-relaxed">
+            Kami tidak mendorong layanan yang tidak Anda perlukan. Rekomendasi disesuaikan dengan
+            ukuran ruangan, anggaran, dan kebutuhan operasional Anda.
+          </p>
+        </div>
+
+        <!-- Reason 5 -->
+        <div class="reason-card">
+          <div class="reason-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-7 h-7">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0H5m14 0h2m-2 0h-2m-2 0V7a2 2 0 00-2-2H9a2 2 0 00-2 2v10m12 0H7" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-navy mb-2">Hunian &amp; Komersial</h3>
+          <p class="text-navy/70 text-sm leading-relaxed">
+            Kami menangani kebutuhan AC untuk rumah tinggal, kantor, toko, restoran, dan ruang
+            komersial lainnya — dengan pendekatan yang sesuai untuk masing-masing.
+          </p>
+        </div>
+
+        <!-- Reason 6 -->
+        <div class="reason-card">
+          <div class="reason-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-7 h-7">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-navy mb-2">Lokasi yang Terjangkau</h3>
+          <p class="text-navy/70 text-sm leading-relaxed">
+            Berlokasi strategis untuk melayani Kendal, Batang, dan Semarang — memudahkan mobilitas
+            tim kami untuk menjangkau lokasi Anda.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- =================== FORM KONSULTASI + KONTAK =================== -->
+  <section id="kontak" class="py-20 lg:py-28 bg-navy text-white section-reveal relative overflow-hidden">
+    <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-electric-blue/20 blur-3xl"></div>
+    <div class="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-gold/10 blur-3xl"></div>
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-gold font-semibold uppercase tracking-widest text-sm">Kontak</span>
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl mt-3 mb-4 leading-tight">
+          Konsultasi &amp; Penawaran AC
+        </h2>
+        <p class="text-white/70 leading-relaxed">
+          Isi form di bawah, lalu kami akan mengirimkan data Anda langsung ke WhatsApp kami untuk
+          ditindaklanjuti.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-5 gap-8 lg:gap-10">
+        <!-- Info Kontak (kolom kiri) -->
+        <div class="lg:col-span-2">
+          <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 sm:p-8 h-full">
+            <h3 class="font-heading font-bold text-xl mb-6">Informasi Kontak</h3>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/6281949350104?text=Halo%20DDA%20TEHNIK%2C%20saya%20ingin%20konsultasi%20layanan%20AC."
+               target="_blank" rel="noopener noreferrer"
+               class="flex items-start gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-colors mb-3 group">
+              <span class="flex-shrink-0 w-11 h-11 rounded-full bg-gold/20 text-gold flex items-center justify-center group-hover:bg-gold group-hover:text-navy transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.343-11.891 11.9-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.742 5.634l-.999 3.648 3.746-.981zm5.436-7.965c-.07-.116-.257-.185-.538-.328-.282-.143-1.664-.822-1.922-.915-.257-.093-.444-.14-.632.14-.187.279-.726.915-.891 1.103-.164.186-.329.209-.611.07-.282-.14-1.191-.439-2.268-1.4-.839-.749-1.405-1.674-1.57-1.955-.164-.279-.018-.43.124-.571.127-.127.282-.329.423-.494.143-.164.187-.28.281-.468.094-.187.047-.349-.023-.492-.07-.143-.631-1.523-.864-2.083-.227-.546-.459-.472-.631-.481l-.538-.009c-.187 0-.492.07-.749.349-.257.279-.982.959-.982 2.339 0 1.379 1.005 2.713 1.146 2.9.14.187 1.974 3.013 4.779 4.221.668.288 1.189.46 1.596.589.671.213 1.283.183 1.767.111.539-.08 1.664-.681 1.898-1.34.234-.659.234-1.223.164-1.34z"/>
+                </svg>
+              </span>
+              <div>
+                <p class="text-xs text-white/60 mb-0.5">WhatsApp</p>
+                <p class="font-semibold text-white">0819-4935-0104</p>
+              </div>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:Vconsultingkendal@gmail.com"
+               class="flex items-start gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-colors mb-3 group">
+              <span class="flex-shrink-0 w-11 h-11 rounded-full bg-electric-blue/20 text-electric-blue flex items-center justify-center group-hover:bg-electric-blue group-hover:text-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </span>
+              <div class="min-w-0">
+                <p class="text-xs text-white/60 mb-0.5">Email</p>
+                <p class="font-semibold text-white text-sm break-all">Vconsultingkendal@gmail.com</p>
+              </div>
+            </a>
+
+            <!-- Area Layanan -->
+            <div class="flex items-start gap-4 p-4 rounded-xl bg-white/5">
+              <span class="flex-shrink-0 w-11 h-11 rounded-full bg-electric-blue/20 text-electric-blue flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </span>
+              <div>
+                <p class="text-xs text-white/60 mb-0.5">Area Layanan</p>
+                <p class="font-semibold text-white">Kendal · Batang · Semarang</p>
+              </div>
+            </div>
+
+            <!-- Catatan -->
+            <div class="mt-6 p-4 rounded-xl bg-gold/10 border border-gold/20">
+              <p class="text-xs text-gold/90 leading-relaxed">
+                <strong>Catatan:</strong> Klik tombol WhatsApp di atas untuk konsultasi langsung,
+                atau isi form konsultasi di samping untuk kirim data kebutuhan Anda.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Konsultasi (kolom kanan, lebar 3) -->
+        <div class="lg:col-span-3">
+          <form id="consultForm" class="bg-white rounded-2xl p-6 sm:p-8 shadow-2xl" novalidate>
+            <h3 class="font-heading font-bold text-xl text-navy mb-6">Form Konsultasi</h3>
+
+            <!-- Pesan error / sukses (hidden by default) -->
+            <div id="formMessage" class="hidden mb-4 p-3 rounded-lg text-sm" role="alert"></div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <!-- Nama -->
+              <div class="sm:col-span-2">
+                <label for="name" class="form-label">Nama Lengkap <span class="text-red-500">*</span></label>
+                <input type="text" id="name" name="name" required
+                       class="form-input" placeholder="Contoh: Budi Santoso" />
+              </div>
+
+              <!-- No. WhatsApp -->
+              <div>
+                <label for="phone" class="form-label">No. WhatsApp <span class="text-red-500">*</span></label>
+                <input type="tel" id="phone" name="phone" required
+                       class="form-input" placeholder="08xxxxxxxxxx" />
+              </div>
+
+              <!-- Lokasi -->
+              <div>
+                <label for="location" class="form-label">Lokasi <span class="text-red-500">*</span></label>
+                <select id="location" name="location" required class="form-input">
+                  <option value="">Pilih lokasi</option>
+                  <option value="Kendal">Kendal</option>
+                  <option value="Batang">Batang</option>
+                  <option value="Semarang">Semarang</option>
+                  <option value="Lainnya">Lainnya</option>
+                </select>
+              </div>
+
+              <!-- Jenis Layanan -->
+              <div>
+                <label for="service" class="form-label">Jenis Layanan <span class="text-red-500">*</span></label>
+                <select id="service" name="service" required class="form-input">
+                  <option value="">Pilih layanan</option>
+                  <option value="Pemasangan AC Baru">Pemasangan AC Baru</option>
+                  <option value="Servis & Perbaikan AC">Servis &amp; Perbaikan AC</option>
+                  <option value="Perawatan Berkala">Perawatan Berkala</option>
+                  <option value="AC Gedung & Komersial">AC Gedung &amp; Komersial</option>
+                  <option value="Lainnya">Lainnya</option>
+                </select>
+              </div>
+
+              <!-- Jenis AC -->
+              <div>
+                <label for="acType" class="form-label">Jenis AC <span class="text-red-500">*</span></label>
+                <select id="acType" name="acType" required class="form-input">
+                  <option value="">Pilih jenis AC</option>
+                  <option value="Split AC">Split AC</option>
+                  <option value="Cassette AC">Cassette AC</option>
+                  <option value="Outdoor Unit">Outdoor Unit</option>
+                  <option value="Belum tahu / Minta rekomendasi">Belum tahu / Minta rekomendasi</option>
+                </select>
+              </div>
+
+              <!-- Jumlah Unit -->
+              <div class="sm:col-span-2">
+                <label for="units" class="form-label">Jumlah Unit <span class="text-red-500">*</span></label>
+                <input type="number" id="units" name="units" required min="1"
+                       class="form-input" placeholder="Contoh: 2" />
+              </div>
+
+              <!-- Catatan -->
+              <div class="sm:col-span-2">
+                <label for="notes" class="form-label">Catatan Tambahan</label>
+                <textarea id="notes" name="notes" rows="4"
+                          class="form-input resize-none" placeholder="Tuliskan kebutuhan atau pertanyaan tambahan Anda..."></textarea>
+              </div>
+            </div>
+
+            <!-- Tombol Submit -->
+            <button type="submit" class="btn-primary w-full mt-6 justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.343-11.891 11.9-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.742 5.634l-.999 3.648 3.746-.981zm5.436-7.965c-.07-.116-.257-.185-.538-.328-.282-.143-1.664-.822-1.922-.915-.257-.093-.444-.14-.632.14-.187.279-.726.915-.891 1.103-.164.186-.329.209-.611.07-.282-.14-1.191-.439-2.268-1.4-.839-.749-1.405-1.674-1.57-1.955-.164-.279-.018-.43.124-.571.127-.127.282-.329.423-.494.143-.164.187-.28.281-.468.094-.187.047-.349-.023-.492-.07-.143-.631-1.523-.864-2.083-.227-.546-.459-.472-.631-.481l-.538-.009c-.187 0-.492.07-.749.349-.257.279-.982.959-.982 2.339 0 1.379 1.005 2.713 1.146 2.9.14.187 1.974 3.013 4.779 4.221.668.288 1.189.46 1.596.589.671.213 1.283.183 1.767.111.539-.08 1.664-.681 1.898-1.34.234-.659.234-1.223.164-1.34z"/>
+              </svg>
+              Kirim via WhatsApp
+            </button>
+
+            <p class="text-xs text-navy/50 mt-3 text-center">
+              Tombol akan membuka WhatsApp dengan pesan otomatis berisi data Anda.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== FOOTER =================== -->
+  <footer class="bg-navy-dark text-white/70 pt-16 pb-6 border-t border-white/10">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+        <!-- Brand -->
+        <div class="lg:col-span-1">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-navy text-gold font-heading font-extrabold text-sm">
+              DDA
+            </span>
+            <span class="font-heading font-extrabold text-lg text-white">
+              DDA <span class="text-gold">TEHNIK</span>
+            </span>
+          </div>
+          <p class="text-sm leading-relaxed mb-4">
+            Penyedia layanan pendingin udara profesional untuk hunian, bisnis, dan fasilitas
+            komersial di Kendal, Batang, dan Semarang.
+          </p>
+        </div>
+
+        <!-- Menu navigasi -->
+        <div>
+          <h4 class="font-heading font-bold text-white text-sm uppercase tracking-wider mb-4">Navigasi</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#home" class="hover:text-gold transition-colors">Home</a></li>
+            <li><a href="#tentang" class="hover:text-gold transition-colors">Tentang Kami</a></li>
+            <li><a href="#layanan" class="hover:text-gold transition-colors">Layanan</a></li>
+            <li><a href="#produk" class="hover:text-gold transition-colors">Produk / Jenis AC</a></li>
+          </ul>
+        </div>
+
+        <!-- Lebih lanjut -->
+        <div>
+          <h4 class="font-heading font-bold text-white text-sm uppercase tracking-wider mb-4">Lainnya</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#galeri" class="hover:text-gold transition-colors">Galeri Proyek</a></li>
+            <li><a href="#area" class="hover:text-gold transition-colors">Area Layanan</a></li>
+            <li><a href="#alasan" class="hover:text-gold transition-colors">Alasan Memilih Kami</a></li>
+            <li><a href="#kontak" class="hover:text-gold transition-colors">Kontak</a></li>
+          </ul>
+        </div>
+
+        <!-- Kontak -->
+        <div>
+          <h4 class="font-heading font-bold text-white text-sm uppercase tracking-wider mb-4">Kontak</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-gold flex-shrink-0 mt-0.5">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.343-11.891 11.9-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.742 5.634l-.999 3.648 3.746-.981zm5.436-7.965c-.07-.116-.257-.185-.538-.328-.282-.143-1.664-.822-1.922-.915-.257-.093-.444-.14-.632.14-.187.279-.726.915-.891 1.103-.164.186-.329.209-.611.07-.282-.14-1.191-.439-2.268-1.4-.839-.749-1.405-1.674-1.57-1.955-.164-.279-.018-.43.124-.571.127-.127.282-.329.423-.494.143-.164.187-.28.281-.468.094-.187.047-.349-.023-.492-.07-.143-.631-1.523-.864-2.083-.227-.546-.459-.472-.631-.481l-.538-.009c-.187 0-.492.07-.749.349-.257.279-.982.959-.982 2.339 0 1.379 1.005 2.713 1.146 2.9.14.187 1.974 3.013 4.779 4.221.668.288 1.189.46 1.596.589.671.213 1.283.183 1.767.111.539-.08 1.664-.681 1.898-1.34.234-.659.234-1.223.164-1.34z"/>
+              </svg>
+              <a href="https://wa.me/6281949350104" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition-colors">0819-4935-0104</a>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4 text-gold flex-shrink-0 mt-0.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <a href="mailto:Vconsultingkendal@gmail.com" class="hover:text-gold transition-colors break-all">Vconsultingkendal@gmail.com</a>
+            </li>
+            <li class="flex items-start gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4 text-gold flex-shrink-0 mt-0.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span>Kendal · Batang · Semarang</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Garis pemisah -->
+      <div class="border-t border-white/10 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+        <p>&copy; <span id="year"></span> DDA TEHNIK. Seluruh hak cipta dilindungi.</p>
+        <p>Dibuat dengan HTML, Tailwind CSS, jQuery, dan Animate.css.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =================== TOMBOL FLOATING WHATSAPP =================== -->
+  <a href="https://wa.me/6281949350104?text=Halo%20DDA%20TEHNIK%2C%20saya%20ingin%20konsultasi%20layanan%20AC."
+     target="_blank" rel="noopener noreferrer"
+     id="waFloat"
+     aria-label="Chat WhatsApp"
+     class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.343-11.891 11.9-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.742 5.634l-.999 3.648 3.746-.981zm5.436-7.965c-.07-.116-.257-.185-.538-.328-.282-.143-1.664-.822-1.922-.915-.257-.093-.444-.14-.632.14-.187.279-.726.915-.891 1.103-.164.186-.329.209-.611.07-.282-.14-1.191-.439-2.268-1.4-.839-.749-1.405-1.674-1.57-1.955-.164-.279-.018-.43.124-.571.127-.127.282-.329.423-.494.143-.164.187-.28.281-.468.094-.187.047-.349-.023-.492-.07-.143-.631-1.523-.864-2.083-.227-.546-.459-.472-.631-.481l-.538-.009c-.187 0-.492.07-.749.349-.257.279-.982.959-.982 2.339 0 1.379 1.005 2.713 1.146 2.9.14.187 1.974 3.013 4.779 4.221.668.288 1.189.46 1.596.589.671.213 1.283.183 1.767.111.539-.08 1.664-.681 1.898-1.34.234-.659.234-1.223.164-1.34z"/>
+    </svg>
+    <span class="absolute inset-0 rounded-full bg-green-500 animate-ping opacity-40 -z-10"></span>
+  </a>
+
+  <!-- Tombol scroll-to-top -->
+  <button id="scrollTop" aria-label="Kembali ke atas"
+          class="fixed bottom-6 left-6 z-40 w-12 h-12 rounded-full bg-navy hover:bg-electric-blue text-white flex items-center justify-center shadow-xl opacity-0 pointer-events-none transition-all duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+  </button>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

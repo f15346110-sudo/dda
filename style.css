@@ -1,0 +1,482 @@
+/* =========================================================
+   DDA TEHNIK - style.css
+   Penyesuaian desain di luar utility Tailwind CSS.
+   Warna brand: navy #082B4C, electric blue #0878C9,
+                gold #D5A43A, putih #FFFFFF.
+   ========================================================= */
+
+/* ---------- 1. Base & Typography ---------- */
+html {
+  /* Smooth scrolling untuk navigasi anchor */
+  scroll-behavior: smooth;
+  /* Offset agar section tidak tertutup navbar fixed */
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #082B4C;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', 'Inter', sans-serif;
+}
+
+/* ---------- 2. Custom utility classes ---------- */
+
+/* Warna navy yang lebih gelap untuk footer */
+.bg-navy-dark {
+  background-color: #061d33;
+}
+
+/* Variant hover untuk warna gold yang lebih gelap */
+.hover\:bg-gold-dark:hover {
+  background-color: #b8902f;
+}
+.bg-gold-dark {
+  background-color: #b8902f;
+}
+
+/* ---------- 3. Navbar ---------- */
+#navbar {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* Saat di-scroll, navbar jadi solid navy dengan shadow */
+#navbar.scrolled {
+  background-color: rgba(8, 43, 76, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Link navigasi desktop */
+.nav-link {
+  position: relative;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.5rem 0.875rem;
+  border-radius: 0.5rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #D5A43A;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+/* Garis bawah animasi pada nav-link saat hover */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0.25rem;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #D5A43A;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 30%;
+  left: 35%;
+}
+
+/* Link menu mobile */
+.mobile-link {
+  display: block;
+  padding: 0.875rem 1rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mobile-link:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+  color: #D5A43A;
+}
+
+/* ---------- 4. Hero Background ---------- */
+.hero-bg {
+  background:
+    linear-gradient(135deg, #082B4C 0%, #0a3a63 50%, #0878C9 100%);
+  background-attachment: fixed;
+}
+
+/* Pola dekoratif di hero */
+.hero-pattern {
+  background-image:
+    radial-gradient(circle at 25px 25px, rgba(255, 255, 255, 0.04) 2px, transparent 0),
+    radial-gradient(circle at 75px 75px, rgba(213, 164, 58, 0.05) 2px, transparent 0);
+  background-size: 100px 100px;
+}
+
+/* ---------- 5. Tombol (Buttons) ---------- */
+
+/* Tombol primary: gold background */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #D5A43A;
+  color: #082B4C;
+  font-weight: 600;
+  padding: 0.875rem 1.75rem;
+  border-radius: 9999px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 20px rgba(213, 164, 58, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: #b8902f;
+  color: #082B4C;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(213, 164, 58, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Tombol secondary: outline putih (untuk hero) */
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.875rem 1.75rem;
+  border-radius: 9999px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Tombol outline (untuk section terang) */
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: #082B4C;
+  font-weight: 600;
+  padding: 0.875rem 1.75rem;
+  border-radius: 9999px;
+  border: 2px solid #082B4C;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: #082B4C;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* ---------- 6. Kartu Layanan (service-card) ---------- */
+.service-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 1.75rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #0878C9, #D5A43A);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(8, 43, 76, 0.12);
+  border-color: rgba(8, 120, 201, 0.3);
+}
+
+.service-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* ---------- 7. Kartu Jenis AC (ac-card) ---------- */
+.ac-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ac-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.18);
+}
+
+/* ---------- 8. Galeri ---------- */
+.gallery-item {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(8, 43, 76, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+  filter: brightness(0.6);
+}
+
+.gallery-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(8, 43, 76, 0.18);
+}
+
+/* Caption yang muncul saat hover */
+.gallery-caption {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.25rem;
+  background: linear-gradient(to top, rgba(8, 43, 76, 0.9) 0%, rgba(8, 43, 76, 0) 60%);
+  color: #ffffff;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.gallery-item:hover .gallery-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Untuk mobile (no hover) - tampilkan caption selalu di tampilan kecil */
+@media (max-width: 640px) {
+  .gallery-caption {
+    opacity: 1;
+    transform: translateY(0);
+    background: linear-gradient(to top, rgba(8, 43, 76, 0.8) 0%, rgba(8, 43, 76, 0) 60%);
+  }
+}
+
+/* ---------- 9. Kartu Area Layanan ---------- */
+.area-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 1.75rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.area-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(8, 43, 76, 0.12);
+  border-color: rgba(8, 120, 201, 0.4);
+}
+
+/* ---------- 10. Kartu Alasan ---------- */
+.reason-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1.75rem;
+  border-top: 4px solid transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.reason-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(8, 43, 76, 0.1);
+  border-top-color: #D5A43A;
+}
+
+.reason-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 1rem;
+  background-color: rgba(8, 120, 201, 0.1);
+  color: #0878C9;
+  margin-bottom: 1.25rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.reason-card:hover .reason-icon {
+  background-color: #0878C9;
+  color: #ffffff;
+}
+
+/* ---------- 11. Form Styling ---------- */
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #082B4C;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  color: #082B4C;
+  background-color: #f9fafb;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: inherit;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #0878C9;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(8, 120, 201, 0.1);
+}
+
+.form-input::placeholder {
+  color: #9ca3af;
+}
+
+/* State error - jika input tidak valid */
+.form-input.error {
+  border-color: #ef4444;
+  background-color: #fef2f2;
+}
+
+.form-input.error:focus {
+  box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.1);
+}
+
+/* ---------- 12. Scroll Reveal Animation ---------- */
+.section-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- 13. Tombol scroll-to-top visible state ---------- */
+#scrollTop.visible {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+/* ---------- 14. Animasi pulse untuk tombol WhatsApp float ---------- */
+@keyframes wa-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+#waFloat {
+  animation: wa-float 3s ease-in-out infinite;
+}
+
+/* ---------- 15. Accessibility ---------- */
+
+/* fokus yang jelas untuk keyboard navigation */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #0878C9;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  #waFloat {
+    animation: none;
+  }
+}
+
+/* ---------- 16. Custom scrollbar (optional, untuk estetika) ---------- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #082B4C;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0878C9;
+}
+
+/* ---------- 17. Responsive tweaks ---------- */
+@media (max-width: 640px) {
+  .hero-bg {
+    background-attachment: scroll;
+  }
+  h1 {
+    line-height: 1.15;
+  }
+}
+
+/* ---------- 18. Print friendly ---------- */
+@media print {
+  #navbar,
+  #waFloat,
+  #scrollTop,
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline {
+    display: none !important;
+  }
+  body {
+    color: #000;
+    background: #fff;
+  }
+}
